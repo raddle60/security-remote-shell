@@ -12,7 +12,8 @@ public class JsShellEngineTest {
 
     @Test
     public void testExecuteShell() {
-        engine.executeShell(null, null);
+        engine.init("src/test/resources/commander");
+        engine.executeShell(null, null, null, null);
     }
 
 }
