@@ -8,10 +8,10 @@ package com.raddle.shell.engine;
 public interface ShellResponse {
     public static final int EXIT_UNKNOWN_ERROR = -99;
     public static final int EXIT_NOT_EXECUTED = -90;
-    public static final int TYPE_MESSAGE = 1;
-    public static final int TYPE_EXIT_CODE = 0;
+    public static final byte TYPE_MESSAGE = 1;
+    public static final byte TYPE_EXIT_CODE = 0;
 
-    void writeResponse(int type, byte[] bytes);
+    void writeResponse(byte type, byte[] bytes);
 
     void writeMessage(String message);
 
